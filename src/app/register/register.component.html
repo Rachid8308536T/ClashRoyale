@@ -1,0 +1,33 @@
+<body>
+  <section class="container">
+    <h1 class="title">Inscription</h1>
+    <div class="input">
+      <input
+        class="Email"
+        type="text"
+        [(ngModel)]="email"
+        placeholder="e-mail"
+        aria-label="email"
+      />
+
+      <input
+        class="Username"
+        type="text"
+        [(ngModel)]="username"
+        placeholder="Utilisateur"
+        aria-label="Username"
+      />
+
+      <input
+        class="Password"
+        type="text"
+        [(ngModel)]="password"
+        placeholder="mots de passe"
+        aria-label="password"
+      />
+    </div>
+    <div class="bouton">
+      <button class="btn-outline-success" (click)="register()" type="submit">Envoyer</button>
+    </div>
+  </section>
+</body>

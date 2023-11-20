@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+  }
+  
+
+body{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    
+}
+
+#videoweb {
+    width: 70%;
+    border: 10px solid;
+    border-image: linear-gradient(90deg, #f4b350, #f8dd95, #f1aa42) 1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .BigVidéo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bouton{
+    width: 20%;
+    position: absolute;
+    top: 16%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  

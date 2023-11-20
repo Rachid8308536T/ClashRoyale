@@ -1,0 +1,29 @@
+<body>
+  <img
+    src="../assets/ressources/fond.png"
+    alt="Girl in a jacket"
+    class="bannière"
+  />
+</body>
+
+<div class="grid-container">
+  <div class="BigVidéo">
+    <video id="videoweb" #myVideo controls (timeupdate)="onVideoTimeUpdate($event)" (mouseenter)="InsideVideo()" (mouseleave)="OutsideVideo()">
+      <source src="../assets/ressources/Intro3.mp4" type="video/mp4">
+    </video>
+      
+  </div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+
+  <button *ngIf="showButton" (click)="redirection()">
+    <img
+      src="../assets/ressources/Ajouter.png"
+      alt="Girl in a jacket"
+      class="bouton"
+    />
+  </button>
+</div>

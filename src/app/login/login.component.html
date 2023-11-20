@@ -1,0 +1,41 @@
+<body>
+  <!-- <img
+    src="../assets/ressources/fond.png"
+    alt="Girl in a jacket"
+    class="bannière"
+  /> -->
+  <section class="container">
+    <div class="intérieur">
+    <h1 class="title">Bienvenue à toi</h1>
+    <div class="input">
+      <input
+        class="utilisateur"
+        type="text"
+        [(ngModel)]="username"
+        placeholder="Utilisateur"
+        aria-label="Username"
+      />
+
+      <input
+        type="password"
+        [(ngModel)]="password"
+        class="password"
+        placeholder="**************"
+        aria-label="Passsword"
+      />
+
+      <button (click)="login()" class="btn-outline-success" type="submit">
+        Connexion
+      </button>
+
+      <ul>
+        <li class="Rachid">Mots de passe oublié</li>
+       
+        <li class="Rachid">Inscription</li>
+      </ul>
+
+    </div>
+      <img src="../assets/ressources/login.png" class="RoiChevalier"alt="" />
+    </div>
+  </section>
+</body>

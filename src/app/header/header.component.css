@@ -1,0 +1,94 @@
+ /* .nav-wrapper{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin-left: -8px;
+}   */
+
+
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+}
+
+.trait-couleur {
+  background: -webkit-linear-gradient(90deg, #f4b350, #f8dd95, #f1aa42);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #f4b350, #f8dd95, #f1aa42);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 1rem;
+
+}
+
+.logo {
+
+  width: 13%;
+}
+
+.Accueil {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0e447c;
+}
+
+.liste1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #0e447c;
+}
+
+.liste2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #0e447c;
+}
+
+.menu, h2, a {
+  display: flex;
+  justify-content: space-between;
+  font-family: MaPoliceTTF;
+  text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b, -1px -1px 0 #f3b95b;
+  color: #b52c4c;
+  text-decoration: none;
+
+}
+
+.zonerecherche{
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 40%;
+  /* border: 5px solid #f8dd95; */
+  background-color: #0e447c;
+  border: none;
+  font-size: 35px;
+  font-family: MaPoliceTTF;
+  text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b, -1px -1px 0 #f3b95b;
+  color: #b52c4c;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: 'MaPoliceTTF';
+  src: url('/assets/ressources/clash.ttf') format('truetype');
+}
+
+

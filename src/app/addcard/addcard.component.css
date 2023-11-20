@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+@font-face {
+  font-family: "MaPoliceTTF";
+  src: url("/assets/ressources/clash.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/ressources/Chef3.png");
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../assets/ressources/fondCard2.png");
+  /* background-color: #0e447c; */
+  height: 100px;
+  border-bottom: 10px solid #dc2b3f;
+}
+
+h2 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 2px 5px #000;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.title {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #000;
+  margin-top: 20px;
+}
+
+.ChefLogo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.formsend {
+  background-image: url("../../assets/ressources/fondCard2.png");
+  /* background-color: #0e447c; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 24%;
+  right: 50%;
+  transform: translateX(
+    -50%
+  ); /* Centre horizontalement la div par rapport à son propre axe */
+  width: 450px;
+  height: 620px;
+  border: 5px solid #dc2b3f;
+  border-radius: 15px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.Name,
+.Image,
+.Type,
+.Elixir,
+.Rarete {
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: MaPoliceTTF;
+  color: black;
+  font-size: small;
+  background-color: #d6d6d6;
+}
+
+.type,
+.rarete {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.btn-outline-success {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 9%;
+  margin-top: 10px;
+  height: 30px;
+  width: 110px;
+  font-family: MaPoliceTTF;
+  cursor: pointer;
+}
+
+.previewPersonnage {
+  background-image: url("../../assets/ressources/fondCard.png");
+  background-size: cover;
+  /* background-color: #0e447c; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  transform: translateX(
+    -50%
+  ); /* Centre horizontalement la div par rapport à son propre axe */
+  width: 450px;
+  height: 620px;
+  border: 5px solid #dc2b3f;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title2 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.imgPerso {
+  width: 40%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container3 {
+  padding: 2px 16px;
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.ajouter {
+  width: 30%;
+  position: absolute;
+  top: 92%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.supprimer {
+  width: 20%;
+  position: absolute;
+  top: 856px;
+  right: 15%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.modifier {
+  width: 300px;
+  position: absolute;
+  top: 847px;
+  right: 25%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.BcoteAcote{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+.textarea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 30px; */
+  font-family: MaPoliceTTF;
+  color: black;
+  font-size: 12px;
+  background-color: #d6d6d6;
+  width: 285px;
+  border-radius: 5px;
+  height: 150px;
+  cursor: pointer;
+}
+
+label {
+  font-family: MaPoliceTTF;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+select {
+  font-family: MaPoliceTTF;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  padding: 5px;
+  width: 285px;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+}
+
+select:focus {
+  font-family: MaPoliceTTF;
+}
+
+option.custom-option1 {
+  color: #d7bf41;
+}
+
+input[type=file]::file-selector-button {
+  
+  border: none;
+  background: #d6d6d6;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  font-size: 12px;
+  font-family: MaPoliceTTF;
+  width: 130px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  width: 285px;
+ 
+  border-radius: 5px;
+  background-color: #d6d6d6;
+  margin-bottom: 25px;
+}
+
+.custom-file-upload span {
+  font-size: small;
+  ;
+}
+
+/* Style pour afficher le placeholder dans l'onglet du menu déroulant */
+.menu option[value=""][disabled] {
+  display: none;
+}
+
+.menu:before {
+  content: 'Choisissez une rareté'; /* Texte de l'inscription */
+  display: block;
+  color: #888; /* Couleur du texte */
+  font-style: italic; /* Style de police italic */
+}
+
+.imgPerso{
+  font-size: 35px;
+  font-family: MaPoliceTTF;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+p {
+  font-family: MaPoliceTTF;
+  color: black;
+  width: 390px;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  margin: auto;
+}
+
+/* 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangleRed {
+  height: 50px;
+  width: 100px;
+  background-color: #ff1a1a;
+}
+
+.rectangleGreen {
+  height: 50px;
+  width: 100px;
+  background-color: #66ff33;
+} */

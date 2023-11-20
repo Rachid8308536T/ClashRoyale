@@ -1,0 +1,181 @@
+<body>
+  <section class="container">
+    <nav class="header">
+      <h2>Administrateur Royale</h2>
+
+      <img src="../assets/ressources/Chef.png" class="ChefLogo" alt="" />
+    </nav>
+
+    <section class="formsend">
+      <h1 class="title">Carte</h1>
+      <div class="input">
+        <input
+          [(ngModel)]="viewCarte.name"
+          id="nameInput"
+          class="Name"
+          type="text"
+          placeholder="Nom"
+          aria-label="Name"
+        />
+
+        <!-- <input
+          [(ngModel)]="viewCarte.image"
+          id="imageInput"
+          class="Image"
+          type="text"
+          placeholder="Image"
+          aria-label="Image"
+        /> -->
+
+        <select
+          placeholder="Charlotte"
+          class="menu"
+          [(ngModel)]="viewCarte.type"
+        >
+          <option value="" selected disabled>Type</option>
+          <option value="sort" class="type1" minlength="2">Sort</option>
+          <option value="combatant" class="type2" minlength="2">
+            Combatant
+          </option>
+          <option value="batiment" class="type3" minlength="2">Bâtiment</option>
+        </select>
+
+        <!-- <input
+          [(ngModel)]="viewCarte.type"
+          id="typeInput"
+          class="Type"
+          type="text"
+          placeholder="Type"
+          aria-label="Type"
+          minlength="2"
+        /> -->
+
+        <!-- <input
+          [(ngModel)]="viewCarte.rarete"
+          id="rarityInput"
+          class="Rarete"
+          type="text"
+          placeholder="Rareté"
+          aria-label="Rarete"
+        /> -->
+
+        <select
+          placeholder="Charlotte"
+          class="menu"
+          [(ngModel)]="viewCarte.rarete"
+        >
+          <option value="" selected disabled>Rareté</option>
+          <option value="champion" class="custom-option1" minlength="2">
+            Champion
+          </option>
+          <option value="légendaire" class="custom-option2" minlength="2">
+            Légendaire
+          </option>
+          <option value="épique" class="custom-option3" minlength="2">
+            Épique
+          </option>
+          <option value="rare" class="custom-option4" minlength="2">
+            Rare
+          </option>
+          <option value="commune" class="custom-option5" minlength="2">
+            Commune
+          </option>
+          <option value="avec évolutions" class="custom-option6" minlength="2">
+            Avec Évolutions
+          </option>
+        </select>
+
+        <input
+          [(ngModel)]="viewCarte.elixir"
+          id="elixirInput"
+          class="Elixir"
+          type="number"
+          min="0"
+          max="9"
+          placeholder="Elixir"
+          aria-label="Elixir"
+        />
+        <!-- <label
+          [(ngModel)]="viewCarte.image"
+          for="fileInput"
+          class="custom-file-upload"
+        >
+          <span>Sélectionner une image</span>
+          <input id="fileInput" type="file" accept="image/*" />
+        </label> -->
+
+        <label for="fileInput" class="custom-file-upload">
+          <span>Sélectionner une image</span>
+        </label>
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*"
+          (change)="imageSelected($event)"
+        />
+
+        <textarea
+          class="textarea"
+          [(ngModel)]="viewCarte.description"
+          id="description"
+          rows="4"
+          cols="50"
+          placeholder="Entrez votre description ici..."
+        ></textarea>
+
+        <button (click)="pushCard()">
+          <img
+            src="../assets/ressources/Ajouter.png"
+            alt="Girl in a jacket"
+            class="ajouter"
+          />
+        </button>
+      </div>
+    </section>
+    <section>
+      <section class="previewPersonnage">
+        <div class="preview">
+          <div>
+            <h1 class="title2">{{ createdCard.name }}</h1>
+          </div>
+          <img
+            src="{{ createdCard.image }}"
+            class="imgPerso"
+            alt="Personnage"
+          />
+          <div class="description">
+            <p>{{createdCard.description}}</p>
+          </div>
+          <div class="container3">
+            <p class="type">{{ createdCard.type }}</p>
+            <p class="rarete">{{ createdCard.rarete }}</p>
+            <!-- <p>{{ createdCard.elixir }}</p> -->
+          </div>
+        </div>
+      </section>
+      <div class="BcoteAcote">
+        <button>
+          <img
+            src="../assets/ressources/modifier.png"
+            alt="Girl in a jacket"
+            class="modifier"
+          />
+        </button>
+        <button>
+          <img
+            src="../assets/ressources/supprimer.png"
+            alt="Girl in a jacket"
+            class="supprimer"
+          />
+        </button>
+      </div>
+    </section>
+  </section>
+
+  <!-- <section>
+    <div class="grid-container">
+      <div class="rectangleRed"></div>
+      <div class="rectangleGreen"></div>
+    </div>
+  </section> -->
+</body>
