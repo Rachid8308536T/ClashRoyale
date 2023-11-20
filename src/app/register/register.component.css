@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/ressources/Chevalier.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #0e447c;
+  /* position: relative; */
+  border-radius: 15px;
+  height: 450px;
+  width: 550px;
+  /* margin-top: 10px; */
+  /* position: absolute; */
+  margin-top: 30%;
+  margin-left: 20%;
+  border: 5px solid #f3b95b;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 15%;
+  font-size: 35px;
+  font-family: MaPoliceTTF;
+  text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b,
+    -1px -1px 0 #f3b95b;
+  color: #b52c4c;
+}
+
+@font-face {
+  font-family: "MaPoliceTTF";
+  src: url("/assets/ressources/clash.ttf") format("truetype");
+}
+
+.Email {
+  width: 190px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: MaPoliceTTF;
+  font-size: small;
+  outline: 2px solid #f3b95b;
+}
+
+.Username {
+  width: 190px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: MaPoliceTTF;
+  font-size: small;
+  outline: 2px solid #f3b95b;
+}
+
+.Password {
+  width: 190px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: MaPoliceTTF;
+  font-size: small;
+  outline: 2px solid #f3b95b;
+}
+
+.btn-outline-success {
+  background-color: #b52c4c;
+  color: #f3b95b;
+  border-radius: 9%;
+  margin-top: 20px;
+  height: 30px;
+  width: 110px;
+  font-family: MaPoliceTTF;
+  cursor: pointer;
+  margin-top: 25px;
+}

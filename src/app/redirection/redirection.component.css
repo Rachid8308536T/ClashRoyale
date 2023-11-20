@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MaPoliceTTF";
+  src: url("/assets/ressources/clash.ttf") format("truetype");
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/ressources/arene.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e447c;
+  height: 100px;
+  border-bottom: 10px solid #f3b95b;
+}
+
+.btn-outline-success {
+  background-color: #b52c4c;
+  color: #f3b95b;
+  border-radius: 9%;
+  margin-top: 2%;
+  height: 30px;
+  width: 110px;
+  font-family: MaPoliceTTF;
+  cursor: pointer;
+  margin-left: 2%;
+}
+
+H1{
+  text-align: center;
+  font-family: MaPoliceTTF;
+  text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b,
+    -1px -1px 0 #f3b95b;
+  color: #b52c4c;
+  margin-top: 90px;
+  font-size: 35px;
+}
+
+p{
+  text-align: center;
+font-family: MaPoliceTTF;
+color: whitesmoke;
+font-size: 18px;
+max-width: 1000px;
+margin: 0 auto;
+margin-top: 20px;
+text-shadow: 3px 3px 3px #000; 
+
+}
+
+.btn-outline-success2 {
+  background-color: #b52c4c;
+  color: #f3b95b;
+  border-radius: 9%;
+  margin-top: 2%;
+  height: 30px;
+  width: 150px;
+  font-family: MaPoliceTTF;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.King{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+}
+
+
+h2{
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 2px 5px #000;
+  margin-right: 730px;
+}
+
+.Intro{
+  margin-top: 80px;
+}
+
+.logoPhone{
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.phone{
+  font-size:10px;
+  font-family: MaPoliceTTF;
+  text-shadow: 2px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 2px -1px 0 #f3b95b,
+  -1px -1px 0 #f3b95b;
+color: #b52c4c;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 25px;
+}
+
+.ClashRoyaleLogo{
+  display: flex;
+  justify-content: flex-end;
+  height: 85px;
+margin-right: 20px;
+}
+
+.Duo{
+  display: flex;
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "MaPoliceTTF";
+    src: url("/assets/ressources/clash.ttf") format("truetype");
+  }
+  
+  
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/ressources/wallpaperclashroyale.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden
+  }
