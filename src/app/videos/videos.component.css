@@ -1,9 +1,48 @@
-body{
+body {
     display: flex;
     justify-content: center;
-}
-
-img{
+    align-items: center;
+    background-image: url("../../assets/ressources/fond.png");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 120vh;
+  }
+  
+  @font-face {
+    font-family: "MaPoliceTTF";
+    src: url("/assets/ressources/clash.ttf") format("truetype");
+  }
+  
+  h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: MaPoliceTTF;
+  
+    font-size: 35px;
+    text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b,
+      -1px -1px 0 #f3b95b;
+    color: #b52c4c;
+  }
+  
+  p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    font-family: MaPoliceTTF;
+    color: whitesmoke;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  img {
     width: 100%;
-    
-}
+  }
+  

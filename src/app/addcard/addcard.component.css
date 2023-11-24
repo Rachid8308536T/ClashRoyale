@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-height: 100vh;
+  max-height: 120vh;
 }
 @font-face {
   font-family: "MaPoliceTTF";
@@ -15,6 +15,7 @@ body {
   align-items: center;
   height: 150vh;
   margin: 0;
+  
 }
 
 body::before {
@@ -42,7 +43,9 @@ body::before {
   background-image: url("../../assets/ressources/fondCard2.png");
   /* background-color: #0e447c; */
   height: 100px;
-  border-bottom: 10px solid #dc2b3f;
+  border-bottom: 5px solid #dc2b3f;
+ 
+  box-shadow: inset 0 20px 20px rgba(85, 84, 84, 0.5), 0 20px 20px rgba(85, 84, 84, 0.5);
 }
 
 h2 {
@@ -66,10 +69,15 @@ h2 {
 }
 
 .ChefLogo {
-  height: 80px;
+
   display: flex;
   align-items: center;
   margin-right: 20px;
+}
+.deconnexion{
+  position: relative;
+  left: 500px;
+  top:18px;
 }
 
 .formsend {
@@ -83,11 +91,13 @@ h2 {
   right: 50%;
   transform: translateX(
     -50%
-  ); /* Centre horizontalement la div par rapport à son propre axe */
+  ); 
   width: 450px;
   height: 620px;
-  border: 5px solid #dc2b3f;
-  border-radius: 15px;
+  /* border: 5px solid #dc2b3f;
+  border-radius: 15px; */
+  border-radius: 10px;
+
 }
 
 .input {
@@ -143,11 +153,13 @@ h2 {
     -50%
   ); /* Centre horizontalement la div par rapport à son propre axe */
   width: 450px;
-  height: 620px;
-  border: 5px solid #dc2b3f;
-  border-radius: 15px;
+  height: 613px;
+ 
   justify-content: center;
   align-items: center;
+
+  box-shadow: inset 0 20px 20px rgba(85, 84, 84, 0.5), 0 20px 20px rgba(85, 84, 84, 0.5);
+  border-radius: 10px;
 }
 
 .title2 {
@@ -173,7 +185,7 @@ h2 {
   margin-top: 40px;
 }
 
-.ajouter {
+/* .ajouter {
   width: 30%;
   position: absolute;
   top: 92%;
@@ -181,34 +193,40 @@ h2 {
   transform: translate(50%, -50%);
   z-index: 1;
   cursor: pointer;
+} */
+
+.bouton{
+  width: 150px;
+  height: auto;
 }
 
-.supprimer {
-  width: 20%;
-  position: absolute;
-  top: 856px;
-  right: 15%;
-  transform: translate(50%, -50%);
-  z-index: 1;
-  border: none;
-  cursor: pointer;
-}
-
-.modifier {
+/* .modifier {
   width: 300px;
   position: absolute;
-  top: 847px;
+  top: 857px;
   right: 25%;
   transform: translate(50%, -50%);
   z-index: 1;
   border: none;
   cursor: pointer;
-}
+} */
+
+/* .rechercher {
+  width: 300px;
+  position: absolute;
+  top: 857px;
+  right: 25%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}  */
 
 .BcoteAcote{
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  margin-top: 20px;
 }
 
 
@@ -322,12 +340,36 @@ input[type="file"] {
 p {
   font-family: MaPoliceTTF;
   color: black;
-  width: 390px;
+
   overflow: hidden; 
   text-overflow: ellipsis;
   word-wrap: break-word;
-  margin: auto;
+  
+  font-size: 10px;
 }
+
+.boutonajouter{
+  width: 80px;
+  height: auto;
+}
+
+.boutonsupprimer{
+  width: 93px;
+  height: auto;
+}
+
+.boutonmodifier{
+  width: 86px;
+  height: auto;
+  margin-left: 5px
+}
+
+.boutonrechercher{
+  width: 85px;
+  height: auto;
+  margin-left: 5px
+}
+
 
 /* 
 .grid-container {
@@ -351,3 +393,11 @@ p {
   width: 100px;
   background-color: #66ff33;
 } */
+
+.pas2carte{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+

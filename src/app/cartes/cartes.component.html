@@ -1,18 +1,16 @@
 <body>
-  <img
-    src="../assets/ressources/fond.png"
-    alt="Girl in a jacket"
-    class="bannière"
-  />
+  <div class="card" *ngFor="let carte of cartesData">
+  <div [routerLink]="'/preview/' + carte.id">
+    
+      <li h5 class="card-title">{{ carte.name }}</li>
+      <img [src]="carte.image" class="card-img-top w-20" alt="Personnage">
+
+      <ul class="card-body">
+       
+        <li p class="card-text">{{ carte.type }}</li>
+        <li p class="card-text">{{ carte.rarete }}</li>
+      </ul>
+    </div>
+  </div>
 </body>
-<div class="block2">
-  <img
-    src="../assets/ressources/Ruban.png"
-    alt="Girl in a jacket"
-    class="image"
-  />
-  <!-- <div class="zonerecherche"> -->
-  <input type="text" class="zonerecherche" />
-  <!-- </div> -->
-  <!-- <h2 class="recherche">Recherches</h2> -->
-</div>
+

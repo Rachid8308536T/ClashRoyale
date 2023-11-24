@@ -9,29 +9,33 @@
     <h1 class="title">Bienvenue à toi</h1>
     <div class="input">
       <input
+        [(ngModel)]="user.pseudonyme"
         class="utilisateur"
         type="text"
-        [(ngModel)]="username"
         placeholder="Utilisateur"
         aria-label="Username"
       />
 
       <input
+        [(ngModel)]="user.password"
         type="password"
-        [(ngModel)]="password"
         class="password"
         placeholder="**************"
         aria-label="Passsword"
       />
 
-      <button (click)="login()" class="btn-outline-success" type="submit">
-        Connexion
-      </button>
+      <div class="deconnexion">   <img
+        src="../assets/ressources/Connexion.png"
+        alt="Girl in a jacket"
+        (click)="login()"
+        
+      /></div>
 
       <ul>
         <li class="Rachid">Mots de passe oublié</li>
        
-        <li class="Rachid">Inscription</li>
+        <a href="/inscription" class="Rachid">Inscription</a>
+
       </ul>
 
     </div>

@@ -1,31 +1,59 @@
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { Users } from '../User/Users.module';
+import { UsersService } from '../User/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
 })
-export class RegisterComponent {
-  email: string = '';
-  nom: string = '';
-  prenom: string = '';
-  username: string = '';
-  password: string | number = '';
+export class RegisterComponent implements OnInit {
+  newUser: Users = {
+    id: 0,
+    pseudonyme: '',
+    mail: '',
+    password: '',
+    role: 'user',
+    deck: []
+  };
+  loggedIn: boolean = true;
 
-  constructor() {
-    this.email = '';
-    this.nom = '';
-    this.prenom = '';
-    this.username = '';
-    this.password = '';
-  }
+  constructor(private userService: UsersService, private router: Router) {}
 
-  register() {
-    console.log('Email: ' + this.email);
-    console.log('Nom: ' + this.nom);
-    console.log('Prenom: ' + this.prenom);
-    console.log('Username: ' + this.username);
-    console.log('Password: ' + this.password);
+  ngOnInit(): void {
   }
+  register(): void {
+    this.userService.createUser(this.newUser).subscribe((response) => {
+      console.log(response);
+   
+      if (response.role === 'user') {
+        this.router.navigate(['/utilisateur']);
+
+        this.loggedIn = true;
+        localStorage.setItem('user', response.role);
+        localStorage.setItem('loggedInStatus', JSON.stringify(true)); 
+
+      } else if (response.role === 'admin') {
+        this.router.navigate(['/administrateur']);
+
+        this.loggedIn = true;
+        localStorage.setItem('admin', response.role);
+        localStorage.setItem('loggedInStatus', JSON.stringify(true)); 
+      }
+    });
+  }
+  
+
+
 }
+
+
+
+
+
+
+
+
+
+

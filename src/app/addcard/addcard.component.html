@@ -2,11 +2,27 @@
   <section class="container">
     <nav class="header">
       <h2>Administrateur Royale</h2>
+      <div class="deconnexion">
+        <img
+          src="../assets/ressources/déconnexion.png"
+          alt="Girl in a jacket"
+          (click)="redirectToConnexion()"
+        />
+      </div>
 
-      <img src="../assets/ressources/Chef.png" class="ChefLogo" alt="" />
+      <img
+        src="../assets/ressources/Chef.png"
+        (click)="redirectToAccueil()"
+        class="ChefLogo"
+        alt=""
+      />
     </nav>
 
-    <section class="formsend">
+    <section
+      class="formsend"
+      (mouseenter)="Insideformsend()"
+      (mouseleave)="Outsideformsend()"
+    >
       <h1 class="title">Carte</h1>
       <div class="input">
         <input
@@ -17,15 +33,6 @@
           placeholder="Nom"
           aria-label="Name"
         />
-
-        <!-- <input
-          [(ngModel)]="viewCarte.image"
-          id="imageInput"
-          class="Image"
-          type="text"
-          placeholder="Image"
-          aria-label="Image"
-        /> -->
 
         <select
           placeholder="Charlotte"
@@ -39,25 +46,6 @@
           </option>
           <option value="batiment" class="type3" minlength="2">Bâtiment</option>
         </select>
-
-        <!-- <input
-          [(ngModel)]="viewCarte.type"
-          id="typeInput"
-          class="Type"
-          type="text"
-          placeholder="Type"
-          aria-label="Type"
-          minlength="2"
-        /> -->
-
-        <!-- <input
-          [(ngModel)]="viewCarte.rarete"
-          id="rarityInput"
-          class="Rarete"
-          type="text"
-          placeholder="Rareté"
-          aria-label="Rarete"
-        /> -->
 
         <select
           placeholder="Charlotte"
@@ -95,14 +83,6 @@
           placeholder="Elixir"
           aria-label="Elixir"
         />
-        <!-- <label
-          [(ngModel)]="viewCarte.image"
-          for="fileInput"
-          class="custom-file-upload"
-        >
-          <span>Sélectionner une image</span>
-          <input id="fileInput" type="file" accept="image/*" />
-        </label> -->
 
         <label for="fileInput" class="custom-file-upload">
           <span>Sélectionner une image</span>
@@ -122,60 +102,65 @@
           cols="50"
           placeholder="Entrez votre description ici..."
         ></textarea>
-
-        <button (click)="pushCard()">
+        <div class="BcoteAcote">
           <img
-            src="../assets/ressources/Ajouter.png"
-            alt="Girl in a jacket"
-            class="ajouter"
+            *ngIf="showButton"
+            src="../assets/ressources/ajouter.png"
+            alt="bouton ajouter"
+            class="boutonajouter"
+            (click)="pushCard()"
           />
-        </button>
+          <img
+            *ngIf="showButton"
+            src="../assets/ressources/rechercher.png"
+            alt="bouton rechercher"
+            class="boutonrechercher"
+            (click)="searchCard()"
+          />
+          <img
+            *ngIf="showButton"
+            src="../assets/ressources/modifier.png"
+            alt="bouton modifier"
+            class="boutonmodifier"
+            (click)="updateCard()"
+          />
+          <img
+            *ngIf="showButton"
+            src="../assets/ressources/supprimer.png"
+            alt="bouton supprimer"
+            class="boutonsupprimer"
+            (click)="deleteCard()"
+          />
+        </div>
       </div>
     </section>
     <section>
-      <section class="previewPersonnage">
-        <div class="preview">
-          <div>
-            <h1 class="title2">{{ createdCard.name }}</h1>
+      <section>
+        <section class="previewPersonnage">
+          <div class="preview" *ngIf="createdCard !== undefined">
+            <div>
+              <h1 class="title2">{{ createdCard.name }}</h1>
+            </div>
+            <img src="{{ createdCard.image }}" class="imgPerso" alt="" />
+
+            <div class="description">
+              <p>{{ createdCard.description }}</p>
+            </div>
+            <div class="container3">
+              <p class="type">{{ createdCard.type }}</p>
+              <p class="rarete">{{ createdCard.rarete }}</p>
+            </div>
           </div>
-          <img
-            src="{{ createdCard.image }}"
-            class="imgPerso"
-            alt="Personnage"
-          />
-          <div class="description">
-            <p>{{createdCard.description}}</p>
+          <div *ngIf="!createdCard">
+            <h1 class="title">Fabrique à carte</h1>
+            <img
+              src="../assets/ressources/pas2carte.png"
+              class="pas2carte"
+              alt="Personnage"
+            />
           </div>
-          <div class="container3">
-            <p class="type">{{ createdCard.type }}</p>
-            <p class="rarete">{{ createdCard.rarete }}</p>
-            <!-- <p>{{ createdCard.elixir }}</p> -->
-          </div>
-        </div>
+        </section>
       </section>
-      <div class="BcoteAcote">
-        <button>
-          <img
-            src="../assets/ressources/modifier.png"
-            alt="Girl in a jacket"
-            class="modifier"
-          />
-        </button>
-        <button>
-          <img
-            src="../assets/ressources/supprimer.png"
-            alt="Girl in a jacket"
-            class="supprimer"
-          />
-        </button>
-      </div>
     </section>
   </section>
-
-  <!-- <section>
-    <div class="grid-container">
-      <div class="rectangleRed"></div>
-      <div class="rectangleGreen"></div>
-    </div>
-  </section> -->
 </body>

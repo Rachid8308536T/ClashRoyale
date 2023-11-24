@@ -19,6 +19,7 @@ import { IntroComponent } from './intro/intro.component';
 import { RedirectionComponent } from './redirection/redirection.component';
 import { AddcardComponent } from './addcard/addcard.component';
 import { SpaceUserComponent } from './space-user/space-user.component';
+import { PreviewComponent } from './preview/preview.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SpaceUserComponent } from './space-user/space-user.component';
     RedirectionComponent,
     AddcardComponent,
     SpaceUserComponent,
+    PreviewComponent,
     
 
   ],

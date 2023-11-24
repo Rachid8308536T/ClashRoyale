@@ -55,6 +55,12 @@ img {
   margin-left: 2%;
 }
 
+.connexion{
+  position: relative;
+  top: 10px;
+  left: 10px
+}
+
 H1{
   text-align: center;
   font-family: MaPoliceTTF;
@@ -89,6 +95,12 @@ text-shadow: 3px 3px 3px #000;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.inscription{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .King{

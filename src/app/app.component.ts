@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
   show: boolean = true;
 
   constructor(
-    private router : Router
+    public router : Router
     ){}
 
   ngOnInit(): void {
@@ -20,8 +20,7 @@ export class AppComponent implements OnInit{
       .subscribe((event: any) => {
 
         if (event instanceof NavigationStart) {
-          
-          if(event.url === "/Intro") {
+          if(event.url === "/intro" || event.url === "/administrateur" || event.url === "/connexion" || event.url === "/inscription" || event.url === "/redirection" || event.url === "/utilisateur" || event.url === "/") {
             this.show = false;
           } else {
             this.show = true;
@@ -29,10 +28,6 @@ export class AppComponent implements OnInit{
         }
       })
   }
-  
-  
-
-  
 }
 
 

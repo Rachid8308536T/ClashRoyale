@@ -5,7 +5,7 @@
       <input
         class="Email"
         type="text"
-        [(ngModel)]="email"
+        [(ngModel)]="newUser.mail"
         placeholder="e-mail"
         aria-label="email"
       />
@@ -13,7 +13,7 @@
       <input
         class="Username"
         type="text"
-        [(ngModel)]="username"
+        [(ngModel)]="newUser.pseudonyme"
         placeholder="Utilisateur"
         aria-label="Username"
       />
@@ -21,13 +21,16 @@
       <input
         class="Password"
         type="text"
-        [(ngModel)]="password"
+        [(ngModel)]="newUser.password"
         placeholder="mots de passe"
         aria-label="password"
       />
     </div>
-    <div class="bouton">
-      <button class="btn-outline-success" (click)="register()" type="submit">Envoyer</button>
-    </div>
+    <div class="connexion">   <img
+      src="../assets/ressources/Connexion.png"
+      alt="Girl in a jacket"
+      (click)="register()"
+      
+    /></div>
   </section>
 </body>

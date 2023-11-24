@@ -1,47 +1,64 @@
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/ressources/fond.png");
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-    
+@font-face {
+  font-family: "MaPoliceTTF";
+  src: url("/assets/ressources/clash.ttf") format("truetype");
 }
 
-/* .zonerecherche{ */
-    /* position: absolute; */
-    /* top: 37%;
-    left: 50%; */
-    /* display: flex;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 40%; */
-    /* border: 5px solid #f8dd95; */
-    /* background-color: #0e447c;
-    border: none;
-    font-size: 35px;
-    font-family: MaPoliceTTF;
-    text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b, -1px -1px 0 #f3b95b;
-    color: #b52c4c;
-    text-align: center; */
-  /* } */
+.carte-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 170px;
+  margin-top: 50px;
+}
 
-  .image{
-    width: 600px;
-    height: 50%;
-  }
-  /* .block2 {
-    position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .recherche{
-    position: absolute;
-    left: 25%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: 26%; */
-    /* top: 25%;
-    font-size: 35px;
-  } */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: MaPoliceTTF;
+  color: #f3b95b;
+  font-size: 15px;
+  align-items: center;
+  text-shadow: 2px 2px 5px #000;
+}
+
+img {
+  width: auto;
+  height: 300px;
+}

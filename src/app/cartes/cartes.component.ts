@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Cartes } from './cartes.module';
+import { CartesService } from '../cartes/cartes.service';
 
 @Component({
   selector: 'app-cartes',
@@ -8,15 +8,20 @@ import { Cartes } from './cartes.module';
   styleUrls: ['./cartes.component.css']
 })
 export class CartesComponent implements OnInit{
-  name = "";
-  image = "";
-  type = "";
-  rarete = "";
-  elixir = 0;
-  description = "";
-  apiData: Cartes[] = [];
+
+
+  cartesData: Cartes[] = []; // tableau de cartes
+  limite: number = 5; // limite d'affichage des cartes
+  constructor(private cartesService: CartesService) {}
 
   ngOnInit(): void {
+    this.cartesService.getAllCard()
+    .subscribe((reponse) => {
+      console.log(reponse);
+      
+      return (this.cartesData = reponse);
+    });
     
   }
 }
+

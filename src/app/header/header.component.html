@@ -5,19 +5,34 @@
   <div class="trait-couleur"></div>
   <section class="block">
     <img src="../assets/ressources/banniere.png" alt="Girl in a jacket" class="bannière">
+
+    <div *ngIf="Admin">  
+      <a [href]="urlAdmin">
+        <img [src]="imageUrlAdmin" alt="Admin Image" class="rond">
+      </a>
+    </div>
+    
+    <div *ngIf="User">
+      <a [href]="urlUser">
+        <img [src]="imageUrlUser" alt="User Image" class="rond">
+      </a>
+    </div>
+    
+    
+
   </section>
   <div class="trait-couleur"></div>
   <section class="menu">
     <div class="liste1">
-      <h2><a [routerLink]="['/Decks']">Decks</a></h2>
-      <h2><a [routerLink]="['/Cartes']">Cartes</a></h2>
+      <h2><a [routerLink]="['/decks']">Decks</a></h2>
+      <h2><a [routerLink]="['/cartes']">Cartes</a></h2>
     </div>
     <div class="logo">
-      <a [routerLink]="['/Accueil']"><img src="../assets/ressources/Accueil.png" alt="Girl in a jacket" class="Accueil"></a>
+      <a [routerLink]="['/accueil']"><img src="../assets/ressources/Accueil.png" alt="Girl in a jacket" class="Accueil"></a>
     </div>
     <div class="liste2">
-      <h2><a [routerLink]="['/Formulaire']">Formulaire</a></h2>
-      <h2><a [routerLink]="['/Vidéos']">Vidéos</a></h2>
+      <h2><a [routerLink]="['/formulaire']">Formulaire</a></h2>
+      <h2><a [routerLink]="['/vidéos']">Vidéos</a></h2>
     </div>
   </section>
   <div class="trait-couleur"></div>

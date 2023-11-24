@@ -93,14 +93,9 @@ img {
   outline: 2px solid #f3b95b;
 }
 
-.btn-outline-success {
-  background-color: #b52c4c;
-  color: #f3b95b;
-  border-radius: 9%;
-  margin-top: 20px;
+.connexion {
+position: relative;
+left: 210px;
   height: 30px;
   width: 110px;
-  font-family: MaPoliceTTF;
-  cursor: pointer;
-  margin-top: 25px;
 }
