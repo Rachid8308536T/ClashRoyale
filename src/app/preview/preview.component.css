@@ -1,0 +1,239 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/ressources/fond.png");
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 140vh;
+}
+
+@font-face {
+  font-family: "MaPoliceTTF";
+  src: url("/assets/ressources/clash.ttf") format("truetype");
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-image: url("/assets/ressources/fondcarte.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  /* background-image: url("/assets/ressources/fondcarte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  width: 600px; /* Largeur du carré */
+  height: 600px; /* Hauteur du carré */
+  margin-bottom: 380px;
+}
+
+.imgPerso {
+  width: 190px;
+  margin-top: 35px;
+  display: flex;
+  margin-left: 25px;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.title2 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.container3 {
+  margin-top: 38px;
+  max-width: 90%;
+  background-color: blueviolet;
+  height: 50px;
+  width: 340px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.gold-color {
+    background-color: #FD9B09; /* Couleur gold */
+    /* Autres styles si nécessaire */
+  }
+  
+  .blue-color {
+    background-color: #1d84ea; /* Couleur blue */
+    /* Autres styles si nécessaire */
+  }
+  
+  .purple-color {
+    background-color: #8842CB; /* Couleur purple */
+    /* Autres styles si nécessaire */
+  }
+
+.aligne {
+  display: flex;
+}
+
+.type {
+  display: block;
+  justify-content: flex-end;
+
+  text-align: left;
+  width: 170px;
+}
+
+.rarete {
+  display: block;
+  justify-content: flex-start;
+
+  text-align: left;
+  width: 170px;
+}
+
+.type-value1 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.type-value2 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 12px;
+  text-shadow: 2px 2px 5px #000;
+  margin-left: 10px;
+}
+.rarete-value1 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.rarete-value2 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 12px;
+  text-shadow: 2px 2px 5px #000;
+  margin-right: 20px;
+}
+.description {
+  text-align: start;
+  overflow: hidden;
+  max-width: 90%;
+
+  padding: 10px;
+}
+.description-value1 {
+  margin-top: 50px;
+  margin-left: 40px;
+  font-family: MaPoliceTTF;
+  color: black;
+  font-size: 12px;
+  text-shadow: 2px 2px 5px whitesmoke;
+}
+
+.description-value2 {
+  margin-top: 5px;
+  margin-left: 40px;
+  font-family: MaPoliceTTF;
+  color: black;
+  font-size: 12px;
+  text-shadow: 2px 2px 5px whitesmoke;
+
+}
+
+/* .aligne {
+  width: 250px;
+  text-align: center;
+}
+
+.title2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coteàcote {
+  display: flex;
+  max-width: 90%;
+}
+
+.description {
+  margin-left: 20px;
+  max-width: 90%;
+}
+
+.container3 {
+  margin-top: 38px;
+  max-width: 90%;
+  
+}
+
+.elixir-label,
+.elixir-value {
+  display: inline-block; 
+  margin: 0; 
+  
+}
+
+.elixir-value {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.elixir-label {
+  font-family: MaPoliceTTF;
+  font-size: 15px;
+  text-shadow: 5px 1px 0 #f3b95b, -1px 1px 0 #f3b95b, 5px -1px 0 #f3b95b,
+    -1px -1px 0 #f3b95b;
+  color: #b52c4c;
+}
+
+.p,
+.h1 {
+  font-family: MaPoliceTTF;
+  color: whitesmoke;
+  font-size: 15px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.imgPerso{
+    width: 190px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: 25px;
+}
+
+.description{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+  height: 200px;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+} */

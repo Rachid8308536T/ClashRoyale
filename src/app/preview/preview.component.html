@@ -1,16 +1,37 @@
-<section class="previewPersonnage">
-    <div class="preview">
-      <div>
-        <h1 class="title2">{{ viewCarte.name }}</h1>
-      </div>
-      <img src="{{ viewCarte.image }}" class="imgPerso" alt="" />
+<body>
+  <div class="container">
 
-      <div class="description">
-        <p>{{ viewCarte.description }}</p>
-      </div>
-      <div class="container3">
-        <p class="type">{{ viewCarte.type }}</p>
-        <p class="rarete">{{ viewCarte.rarete }}</p>
-      </div>
+    <div class="content" (click)="redirectToCartes()">
+      <section class="previewPersonnage">
+        <div class="preview">
+          <section class="coteàcote">
+            <div class="title"><h1 class="title2">{{ previewCarte.name }}</h1></div>
+          <div class="aligne">
+           
+            <img src="{{ previewCarte.image }}" class="imgPerso" alt="" />
+         
+            <div id="container3" class="container3" [ngClass]="{
+              'gold-color': previewCarte.rarete === 'rare',
+              'blue-color': previewCarte.rarete === 'commune',
+              'purple-color': previewCarte.rarete === 'epique'
+            }">
+              <div class="type"><p class="type-value1">Rareté: </p> 
+                <p class="type-value2">{{ previewCarte.rarete }}</p>
+              </div>
+              <div class="rarete"><p class="rarete-value1">Type: </p> 
+                <p class="rarete-value2">{{ previewCarte.type }}</p>
+              </div>
+            </div>
+          </div>
+          
+         
+        </section>
+        <div class="description"><p class="description-value1">Description: </p><br> 
+          <p class="description-value2">{{ previewCarte.description }}</p>
+        </div>
+        </div>
+      </section>
     </div>
-  </section>
+
+  </div>
+</body>

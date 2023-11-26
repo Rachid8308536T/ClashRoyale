@@ -1,4 +1,5 @@
 <body>
+  <section class="carte-grid">
   <div class="card" *ngFor="let carte of cartesData">
   <div [routerLink]="'/preview/' + carte.id">
     
@@ -12,5 +13,6 @@
       </ul>
     </div>
   </div>
+</section>
 </body>
 

@@ -19,14 +19,12 @@ export class CartesService {
 
   // Récupérer une carte spécifique par son ID avec une requête GET.
   getCardById(id: number): Observable<Cartes> {
-    
     return this.http.get<Cartes>(`${this.dataURL}/${id}`);
   }
 
   // Récupérer une carte spécifique par son NAME avec une requête GET.
   getCardByName(name: string): Observable<Cartes> {
     console.log(`${this.dataURL}/name/${name}`)
-
     return this.http.get<Cartes>(`${this.dataURL}/name/${name}`);
   }
 

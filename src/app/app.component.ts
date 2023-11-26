@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
       .subscribe((event: any) => {
 
         if (event instanceof NavigationStart) {
-          if(event.url === "/intro" || event.url === "/administrateur" || event.url === "/connexion" || event.url === "/inscription" || event.url === "/redirection" || event.url === "/utilisateur" || event.url === "/") {
+          if(event.url === "/intro" || event.url === "/administrateur" || event.url === "/connexion" || event.url === "/inscription" || event.url === "/redirection" || event.url === "/utilisateur" || event.url === "/" || event.url === "/preview/:id") {
             this.show = false;
           } else {
             this.show = true;

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('pseudonyme', JSON.stringify(this.blaze));
 
       if (reponse.role === 'user') {
-        this.router.navigate(['/utilisateur']);
+        this.router.navigate(['/accueil']);
         localStorage.setItem('user', reponse.role);
 
         this.loggedIn = true;
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         console.log(this.loggedIn);
       } else if (reponse.role === 'admin') {
         localStorage.removeItem('user');
-        this.router.navigate(['/administrateur']);
+        this.router.navigate(['/accueil']);
         localStorage.setItem('admin', reponse.role);
 
         this.loggedIn = true;

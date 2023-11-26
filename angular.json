@@ -61,6 +61,7 @@
           "configurations": {
             "production": {
               "browserTarget": "ClashRoyale:build:production"
+              
             },
             "development": {
               "browserTarget": "ClashRoyale:build:development"
