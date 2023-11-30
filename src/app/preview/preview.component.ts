@@ -63,7 +63,6 @@ export class PreviewComponent implements OnInit {
       this.renderer.removeClass(element, this.goldColor);
       this.renderer.removeClass(element, this.blueColor);
     } else {
-      // Gérer le cas par défaut
     }
   }
 }

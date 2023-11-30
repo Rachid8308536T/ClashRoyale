@@ -27,6 +27,7 @@
   
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../../assets/ressources/Chevalier2.png");
@@ -58,3 +59,20 @@
   .ChefLogo{
     margin-right: 20px;
   }
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  .content {
+    width: 600px;
+    height: 600px;
+    background-image: url('../../assets/ressources/Picture2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 560px;
+  }
+  

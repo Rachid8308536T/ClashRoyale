@@ -16,8 +16,13 @@ export class HeaderComponent implements OnInit {
   Admin!: boolean;
   imageUrlAdmin = '../assets/ressources/Chef.png'; 
   urlAdmin = 'administrateur';
-
+urlDuson ='../assets/ressources/Clash Royale Button.mp3'
   constructor(private router: Router) {}
+
+  play() {
+    const audio = new Audio(this.urlDuson);
+    audio.play();
+  }
 
   ngOnInit(): void {
 
